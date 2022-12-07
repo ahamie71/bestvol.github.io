@@ -1,0 +1,37 @@
+"Git branch [barnch name ]": creer une nouvelle branch au commit actuel;
+
+"git rm --cached nom du fichier": arretz de suivre un fichier sans le supprimer;
+
+"Git branch" : afficher les branch ;
+
+"Git checkout":Pour basculer entre les branch;
+
+"Git checkout -b": Creer une branch;
+
+"Git pull": recuperer et fusionner tous les commits de la branche distante du suivi ;
+
+"Git pull origin master" :recuperer les dernieres modifications de votre repository distznt (sur github) vers repository local ;
+
+"Git log": affiche l'historique de commis pour la branche actuellement active;
+
+Initier un projet: git init "Nom du prpjet" ce qui va creer un répertoire dans le dossier courant 
+
+Si le repetoire existe deja on tape la commande "git init";
+
+Pour verifier les changements et tous les erreurs avant d'ajoutez un fichier: "git diff";
+
+Pour ajoutez des fichiers a notre git : "git Add "Nom du ou de plusieurs fichiers "";
+
+Après chaque étape on est ramener a afficher le status de notre git pour verifier si tout ve passe bien :" git status";
+
+Ensuite pour valider les modifications apportées sur nos fichiers: Git Commit -m" un petit commentaire pour decrire ce que tu a fais ";
+
+A la fin le "git push" qui met a jour les references à l'aide des references locales , tout en envoyant les objets necessaires pour completer les references données ;
+
+faire un push vers un github:" git remote add origin line du projet sur github";
+
+apres faire  un push apres avoir fait un commit ;
+
+gitignore : fichier specifie des fichiers intentionnellment non suivis que Git doit ignorer 
+
+git  ou pull request : c'est comme une demande de lecture de code pour le code reviwer avant de merger.

@@ -1,0 +1,119 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+
+ {% block stylesheets %}
+
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+ 
+   <style> 
+      .table { border-collapse: collapse; } 
+      .table th, td { 
+         border-bottom: 1px solid #ddd; 
+         width: 250px; 
+         text-align: left; 
+         align: left; 
+      } 
+   </style> 
+
+
+
+{% endblock %}
+
+
+{% block javascripts %}
+  
+            <script
+
+
+              src="https://code.jquery.com/jquery-3.6.1.min.js"
+              ></script>
+               {# <script src="{{ asset('/js/recherche.js') }}"></script> #}
+               
+ <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+  
+        {% endblock %}
+    
+
+       
+       
+<section class="form">
+        <div class="container">
+  <div class="row">
+                <div class="col"></div>
+                <div class="col-6">
+                
+    {{ form_start(form) }}
+
+
+                     <div class="mb-3">
+                    {{ form_label(form.depart, 'Depart', {'label_attr': {'class': 'form-label'}}) }}
+                    {{ form_row(form.depart) }}
+                    </div>
+
+                  
+
+
+                    {{ form_label(form.destination, 'Destination', {'label_attr': {'class': 'form-label'}}) }}
+                    {{ form_row(form.destination )}}
+                      
+
+                      
+                    {{ form_label(form.datederetour, 'Datederetour', {'label_attr': {'class': 'form-label'}}) }}
+                    {{ form_row(form.datederetour )  }}
+
+                 
+
+         
+                    {{ form_label(form.tarif, 'Tarif', {'label_attr': {'class': 'form-label'}}) }}
+                    {{ form_row(form.tarif)}}
+                     
+        {{ form_rest(form) }}
+         </div>
+                <div class="col"></div>
+            </div>   
+        </div>
+    </section>
+
+    
+
+    
+    {{ form_end(form) }}
+
+    
+
+
+   
+
+
+</div>
+    
+   <table class = "table table-bordered">  
+      <tbody id = "vols"></tbody>  
+     
+
+   </table> 
+
+ 
+    <style>
+body{
+    background-color:#00FFFF !important;
+}
+
+</style>
+
+  
+  
+
+
+{% endblock %}
+
+
+
+
+
+

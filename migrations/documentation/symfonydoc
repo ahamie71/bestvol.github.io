@@ -1,0 +1,207 @@
+Exemple d'offre .
+   
+   AVANT TOUT FAIRE UN GIT STATUS POUR VERIFIER LES CHANGEMENT EFFECTUÉES ET NON EFFECTUÉES ;
+   GIT ADD 
+   GIT COMMIT -M
+   GIT PUSH 
+   PULL REQUEST 
+
+
+Dans git on a la branche principal appelée main qui relie d'autre branch appelée develop ou tout lemonde envoie leurs travaux emergée.par la commande pull request qui va faire une verificatiion du code s'il ya des errerus sinon il sera emergé vers la branche develop 
+
+
+Symfony est un ensemble de composants PHP ainsi qu'un framework MVC libre écrit en PHP.
+Il fournit des fonctionnalités modulables et adaptables qui permettent de faciliter et d’accélérer le développement d'un site web.
+Avantages de Symfony;
+une séparation du code en trois couches, selon le modèle MVC, pour une plus grande maintenabilité et évolutivité ;
+
+Définition
+L’architecture MVC ( Model-View-Controller), est l’une des architectures logicielles les plus utilisées pour les applications Web. Elle permet de créer une application web pour bien gérer la structuration d’un projet en trois parties.
+
+Elle se compose de trois modules : modèle, vue, contrôleur
+
+Composition de l’architecture MVC
+
+Modèle : un noyau de l’application qui gère les données, permet de récupérer les informations dans la base de données, de les organiser pour qu’elles puissent ensuite être traitées par le contrôleur.
+
+
+Vue : composant graphique de l’interface qui permet de présenter les données du modèle à l’utilisateur.
+
+
+Contrôleur : composant responsable des prises de décision, gère la logique du code qui prend des décisions, il est l’intermédiaire entre le modèle et la vue.
+
+Symfony permet de gagner de  temps de développement important. 
+
+
+Quelques commandes de bases pour symfony :
+
+Générateurs de codes
+
+Créer un controlleur
+
+php bin/console make:controller DefaultController
+
+Créer une nouvelle entité
+
+php bin/console make:entity
+
+Regénérer les getters et setters
+
+php bin/console make:entity --regenerate "App\Entity\User"
+
+Générer un CRUD
+
+php bin/console make:crud User
+
+Générer un Form
+
+php bin/console make:form
+
+Opérations sur la base de données
+Créer la base de données
+
+php bin/console doctrine:database:create
+
+Créer une migration
+
+php bin/console make:migration
+
+Voir le diff de migration
+
+php bin/console doctrine:migrations:diff
+
+Migrer
+
+php bin/console doctrine:migrations:migrate
+
+Dump SQL des modifications de schéma
+
+php bin/console doctrine:schema:update --dump-sql
+
+Mettre à jour le schema de base de données:
+
+php bin/console doctrine:schema:update --force
+
+Autres commandes
+
+Vider le cache:
+
+"php bin/console cache:clear"
+
+Encoder un mot de passe:
+
+"php bin/console security:encode-password"
+
+Afficher la liste des commandes Symfony
+Liste les commandes disponibles, y compris les commandes héritées des bundles supplémentaires que vous avez installés.
+
+php app/console list
+ 
+
+Créer un nouveau bundle
+Puisque dans Symfony2 tout est bundle, cette commande est essentielle.
+
+php app/console generate:bundle
+
+
+Afficher les routes de votre application
+Cette commande peut être très utile si vous avez plusieurs fichiers de routing et que vous avez un doute sur une url. Les routes sont classées par nom.
+
+php app/console debug:routerSymfony est un ensemble de composants PHP ainsi qu'un framework MVC libre écrit en PHP.
+Il fournit des fonctionnalités modulables et adaptables qui permettent de faciliter et d’accélérer le développement d'un site web.
+Avantages de Symfony;
+une séparation du code en trois couches, selon le modèle MVC, pour une plus grande maintenabilité et évolutivité ;
+
+Définition
+L’architecture MVC ( Model-View-Controller), est l’une des architectures logicielles les plus utilisées pour les applications Web. Elle permet de créer une application web pour bien gérer la structuration d’un projet en trois parties.
+
+Elle se compose de trois modules : modèle, vue, contrôleur
+
+Composition de l’architecture MVC
+
+Modèle : un noyau de l’application qui gère les données, permet de récupérer les informations dans la base de données, de les organiser pour qu’elles puissent ensuite être traitées par le contrôleur.
+
+
+Vue : composant graphique de l’interface qui permet de présenter les données du modèle à l’utilisateur.
+
+
+Contrôleur : composant responsable des prises de décision, gère la logique du code qui prend des décisions, il est l’intermédiaire entre le modèle et la vue.
+
+Symfony permet de gagner de  temps de développement important. 
+
+
+Quelques commandes de bases pour symfony :
+
+Générateurs de codes
+
+Créer un controlleur
+
+php bin/console make:controller DefaultController
+
+Créer une nouvelle entité
+
+php bin/console make:entity
+
+Regénérer les getters et setters
+
+php bin/console make:entity --regenerate "App\Entity\User"
+
+Générer un CRUD
+
+php bin/console make:crud User
+
+Générer un Form
+
+php bin/console make:form
+
+Opérations sur la base de données
+Créer la base de données
+
+php bin/console doctrine:database:create
+
+Créer une migration
+
+php bin/console make:migration
+
+Voir le diff de migration
+
+php bin/console doctrine:migrations:diff
+
+Migrer
+
+php bin/console doctrine:migrations:migrate
+
+Dump SQL des modifications de schéma
+
+php bin/console doctrine:schema:update --dump-sql
+
+Mettre à jour le schema de base de données:
+
+php bin/console doctrine:schema:update --force
+
+Autres commandes
+
+Vider le cache:
+
+"php bin/console cache:clear"
+
+Encoder un mot de passe:
+
+"php bin/console security:encode-password"
+
+Afficher la liste des commandes Symfony
+Liste les commandes disponibles, y compris les commandes héritées des bundles supplémentaires que vous avez installés.
+
+php app/console list
+ 
+
+Créer un nouveau bundle
+Puisque dans Symfony2 tout est bundle, cette commande est essentielle.
+
+php app/console generate:bundle
+
+
+Afficher les routes de votre application
+Cette commande peut être très utile si vous avez plusieurs fichiers de routing et que vous avez un doute sur une url. Les routes sont classées par nom.
+
+php app/console debug:router

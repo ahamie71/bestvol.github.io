@@ -1,0 +1,177 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Acceuil{% endblock %}
+
+{% block body %}
+
+      
+
+      
+
+
+
+       <div class="jumbotron">
+  <h1 class="display-4">Welcome to BESTFLY</h1>
+  <p class="lead"></p>
+  <hr class="my-4">
+  <p>VOIR LE MONDE DE SES YEUX EST MILLE FOIS MIEUX QUE N'IMPORTE QUEL RÊVE</h1><br>
+  <h1>RESERVER VOLS + Hotels</p>
+  
+        </div> 
+     
+
+     <section id="destinations">
+
+            <h3>Nous proposons differentes destinations pour découvrir le monde !</h3>
+
+            <div class="destinations-group">
+                <!-- destination 1 -->
+                <div class="destination-item barcelone">
+                    <div class="overlay">
+                        <span class="prix">Dès 80€</span>
+                        <span class="nom">Barcelone</span>
+                    </div>
+                </div>
+
+                <!-- destination 2 -->
+                <div class="destination-item dubai">
+                    <div class="overlay">
+                        <span class="prix">Dès 300€</span>
+                        <span class="nom">Dubai</span>
+                    </div>
+                </div>
+
+                <!-- destination 3 -->
+                <div class="destination-item philippines">
+                    <div class="overlay">
+                        <span class="prix">Dès 1200€</span>
+                        <span class="nom">Manille</span>
+                    </div>
+                </div>
+
+                <!-- destination 4 -->
+                <div class="destination-item paris">
+                    <div class="overlay">
+                        <span class="prix">Dès 55€</span>
+                        <span class="nom">Paris</span>
+                    </div>
+                </div>
+
+                <!-- destination 5 -->
+                <div class="destination-item tunis">
+                    <div class="overlay">
+                        <span class="prix">Dès 90€</span>
+                        <span class="nom">Tunis</span>
+                    </div>
+                </div>
+
+                <!-- destination 6 -->
+                <div class="destination-item londres">
+                    <div class="overlay">
+                        <span class="prix">Dès 65€</span>
+                        <span class="nom">Londres</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+       
+
+    </body>
+</html>
+<style>
+     
+.contenant {
+  position: relative;
+  text-align: center;
+  color:red;
+  margin-top:130px
+}
+
+.texte_centrer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.jumbotron { 
+
+background-image:url("/welcome/avion.jpeg");
+background-size: cover;
+height: 100vh;
+
+
+}
+
+//destinations
+
+section#destinations {
+    margin: 0px 20% 0 20%;
+}
+
+section#destinations h3 {
+    padding-top: 50px;
+    opacity: 0.5;
+    color: #373737;
+}
+
+div.destination-item {
+    color: #373737;
+    height: 300px;
+    margin: 15px;
+    position: relative;
+    flex: 1 0 29%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+div.destination-item:hover {
+    transform: scale(0.98);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.2s all;
+}
+
+div.destinations-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.barcelone { background: url(welcome/barcelona_1.jpeg); }
+.dubai { background: url(Welcome/shutterstock_1711382014.jpeg); }
+.londres { background: url(welcome/londres.jpeg); }
+.paris { background: url(welcome/quand-visiter-paris.jpeg); }
+.philippines { background: url(welcome/Partez-a-la-decouverte-de-Manille-1.png);}
+.tunis { background: url(welcome/tunis3.jpeg); }
+
+.overlay { 
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+span.nom {
+    position: relative;
+    color: #373737;
+    background-color: #DBDBD9;
+    top: 20px;
+    float: right;
+    padding: 12px;
+    font-size: 22px;
+}
+
+span.prix {
+    position: relative;
+    color: #fff;
+    background-color: #EF8F1D;
+    padding: 12px;
+    font-size: 25px;
+    top: 220px;
+}
+    </style>
+   
+{% endblock %}
